@@ -18,6 +18,7 @@ public class Login implements Serializable{
 		ObjectOutputStream out= new ObjectOutputStream(fos);
 		out.writeObject(l);
 		out.close();
+		System.out.println("Store");
 		
 		FileInputStream fis=new FileInputStream("C:\\Users\\Balaviki\\OneDrive\\Desktop\\test.txt");
 		ObjectInputStream inp=new ObjectInputStream(fis);
